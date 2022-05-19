@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>table</title>
+	<style>
+		table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+}
+
+td, th {
+  border: 1px solid white;
+  text-align: left;
+  padding: 8px;
+}
+p{
+	padding-left: 200px;
+}
+.a{
+	float: right;
+	padding-right: 20px;
+	color:brown;
+	font-style: bold;
+}
+
+.r{
+	transform: skewY(30degree);
+}
+
+
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+	</style>
+</head>
+<body>
+	<table style="width: 100%;">
+		<tr>
+			<th>Name</th>
+			<th>Position</th>
+			<th>office</th>
+			<th>Age</th>
+			<th>Startdate</th>
+
+		</tr>
+		<tr>
+			
+			<td><img src="plus.png" width="20" height="20px">Ganesh</td>
+			<td>Associate software Analyst</td>
+			<td>Bangalore</td>
+			<td><input type="text" name="name"></td>
+			<td><input type="date" name="name"></td>
+		
+		</tr>
+		<tr>
+			<td><img src="plus.png" width="20" height="20px">Jai</td>
+			<td>Software analyst</td>
+			<td>Bangalore</td>
+			<td><input type="text" name="name"></td>
+			<td><input type="date" name="name"></td>
+		</tr>
+		<tr>
+			<td><img src="plus.png" width="20" height="20px">Sudhakar</td>
+			<td>Solution Specialist</td>
+			<td>Bangalore</td>
+			<td><input type="name" name="name"></td>
+			<td><input type="date" name="name"></td>
+		</tr>
+		<tr>
+			<td><img src="plus.png" width="20" height="20px">Gokul</td>
+			<td>Business Analyst</td>
+			<td>Bangalore</td>
+			<td><input type="text" name="name"></td>
+			<td><input type="date" name="name"></td>
+		</tr>
+		<tr>
+			<td><img src="plus.png" width="20" height="20px">Hari</td>
+			<td>Business Analyst</td>
+			<td>Bangalore</td>
+			<td><input type="text" name="name"></td>
+			<td><input type="date" name="name"></td>
+		</tr>
+		</table>
+		<form>
+			<p><label for="name">Search:</label>
+			<input type="search" name="search"></p>
+		</form>
+		<div class="a">
+		<form>
+			
+			<p>Show enteries:<input list="name">
+			<datalist id="name">
+				<option value="1"></option>
+				<option value="2"></option>
+				<option value="3"></option>
+				<option value="4"></option>
+				<option value="5"></option>
+				</datalist></p>
+			</form>
+			</div>
+			
+
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORMS</title>
+	<style>
+		* {
+  box-sizing: border-box;
+}
+input [type=text]{
+	width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  
+  
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+	
+  
+
+}
+
+input[type=text] :focus {
+	width:100%;
+  
+}
+
+
+label {
+	padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+.container {
+  border-radius: 5px;
+  background-color:black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.a1 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.a2 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.radio{
+	text-align: center;
+	color: yellowgreen;
+}
+.check{
+	text-align: center;
+	color: yellow;
+}
+.date{
+	text-align: center;
+	color: wheat;
+}
+
+
+
+
+.form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 style="color: white;">Registration Form</h1>
+		<form method="post">
+			<div class="form">
+				<div class="a1">
+					<label for="fname">FIRSTNAME:</label>
+				</div>
+				<div class="a2">
+					<input type="text" id="fname" name="name" >
+					</div>
+					</div>
+					<div class="form">
+						<div class="a1">
+							<label for="lname">LASTNAME:</label>
+							</div>
+							<div class="a2">
+								<input type="text" id="lname" name="name" >
+								</div>
+								</div>
+								<div class="form">
+									<div class="a1">
+										<label for="age">AGE:</label>
+										</div>
+										<div class="a2">
+											<input type="number" id="age" name="age">
+											</div>
+											</div>
+											<div class="form">
+												<div class="a1">
+													<label for="mail">EMAIL:</label>
+													</div>
+													<div class="a2">
+														<input type="email" id="mail" name="name">
+														</div>
+														</div>
+														<div class="form">
+															<div class="a1">
+																<label for="name">PASSWORD:</label>
+																</div>
+																<div class="a2">
+																	<input type="password" id="name" name="name" autofocus>
+																	
+																	</div>
+																	
+																	</div>
+		</form>
+	
+	<div class="radio">
+		
+	<form id="my form">SEX:
+		<td>
+			
+			<label>
+			<input type="radio" name="pizza" checked="true" 
+			 id="pepperoni" value="pepperoni"  />male  </label>
+			<label>
+			<input type="radio" name="pizza"  
+			 id="anchovies" value="anchovies"  />female  </label>
+			 <label>
+			<input type="radio" name="pizza" 
+			 id="mushrooms" value="mushrooms"  />others  </label>
+			<label>
+			
+			
+			</td>
+	</form>
+	</div>
+	<div class="check">
+	<form id="myforms"> DETAILS:
+		<td>
+		
+			<input type="checkbox" id="a" name="name" value="student">
+			<label for="a">Im a student</label>
+			<input type="checkbox" id="b" name="name" value="work">
+			
+			<label for="b">Im working</label>
+			<input type="checkbox" id="c" name="name" value="business">
+			<label for="c">Im a businessman</label>
+		</td>
+		</form>
+		</div>
+		<div class="date">
+			<form action="file:///C:/table/table.html">
+				<label for="date">ELIGIBLITY ABOVE 21:</label>
+				<input type="date" id="date" name="datemin" min="2000-01-01"><br><br>
+				<input class="btn" type="submit" value="submit">
+			
+
+				</form>
+			
+				
+				</div>
+		            
+						<form>
+					
+					
+			
+				
+			
+	</div>
+		  
+	
+
+
+</body>
+</html>

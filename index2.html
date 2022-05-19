@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>my web</title>
+    <style>
+        body {
+            background-image: url('image.jpg');
+        }
+        
+        h1 {
+            font-family: verdana;
+            font-size: 300%;
+            background-color: dodgerblue;
+            border: 2px solid tomato;
+            text-align: center;
+        }
+        
+        p.a {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 150%;
+            border: 2px solid rgb(255, 165, 0);
+            background-color: mediumseagreen;
+        }
+        
+        p.b {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 150%;
+            border: 2px dotted rgba(255, 99, 77, 0.8);
+            background-color: violet;
+        }
+        
+        p.c {
+            font-family: cursive, fantasy;
+            font-size: 150%;
+            border: 2px solid dodgerblue;
+            background-color: #ffa500;
+        }
+        
+        p.d {
+            font-family: cursive;
+            font-size: 150%;
+            border: 2px solid slateblue;
+            background-color: hsl(248, 53%, 58%);
+        }
+        
+        #movie {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+        }
+        
+        #movie tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #movie tr:hover {
+            background-color: #1de1c6;
+        }
+        
+        #movie th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: #18134c;
+            color: white;
+        }
+        
+        #movie td,
+        #movie th {
+            border-style: solid;
+            border-color: #ff6b62;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;
+        }
+        
+        #movie table.center {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        
+        .button {
+            background-color: #733ccc;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
+        .button1 {
+            background-color: #5b18f0;
+            border: none;
+            color: white;
+            padding: 16px 30px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
+        ul.b {
+            list-style-type: circle;
+            list-style-position: outside;
+            background: rgb(0, 0, 255);
+            padding: 10px;
+            margin: auto;
+        }
+        
+        ol.a {
+            list-style-type: upper-roman;
+            list-style-type: inside;
+            background: #18134c;
+            padding: 20px;
+        }
+        
+        ul.b li {
+            background: Tomato;
+            color: darblue;
+            margin: 30px;
+            padding: 25;
+            font-size: 18px;
+        }
+        
+        ol.a li {
+            background: seagreen;
+            color: yellow;
+            font-family: fantasy;
+            padding: 20px;
+            margin-left: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: darkred">Spiderman-Comic</h1>
+    <p class="a">Spider-Man is a superhero appearing in <a href="https://en.wikipedia.org/wiki/Spider-Man"> American comic books</a> published by <b>Marvel Comics</b>. Created by writer-editor <cite>Stan Lee and artist Steve Ditko</cite>, he first appeared in the
+        anthology comic book Amazing Fantasy #15 (August 1962) in the Silver Age of Comic Books. He has since been featured in movies, television shows, video games, and plays.
+        <p>
+            <p class="b" title="story">Spider-Man is the alias of <b>Peter Parker</b>, an orphan raised by his Aunt May and Uncle Ben in New York City after his parents Richard and Mary Parker died in a plane crash.</p>
+            <p class="c"> Lee and Ditko had the character deal with the struggles of adolescence and financial issues and gave him many supporting characters, such as Flash Thompson, J. Jonah Jameson and Harry Osborn, romantic interests <sub>Gwen Stacy</sub>,<sup>Mary Jane Watson</sup>                and the Black Cat, and foes such as <mark>Doctor Octopus, the Green Goblin and Venom</mark>. In his origin story, he gets spider-related abilities from a bite from a radioactive spider; these include clinging to surfaces, superhuman strength
+                and agility, and <strong>detecting danger with his "spider-sense."</strong> He also builds wrist-mounted "web-shooter" devices that shoot artificial <del>spider webs</del> <ins> web packs</ins> of his own design.</p>
+            <p class="d"> Marvel has featured Spider-Man in several comic book series, the first and longest-lasting of which is The Amazing Spider-Man. Over the years, the Peter Parker character developed from a shy, nerdy New York City high school student to troubled
+                but outgoing college student, to married high school teacher to, in the late 2000s, a single freelance photographer. In the 2000s, he joins the Avengers.</p>
+
+            <div>
+
+                <table style="width:100%">
+                    <table class="center">
+                        <table id=movie>
+                            <tr>
+                                <th>Sr No</th>
+                                <th>Name</th>
+                                <th>details</th>
+                                <th>rank</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>tobey maguire</td>
+                                <td>antogonist:green goblin</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>andrew garfield</td>
+                                <td>antogonist:electro</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>tom holland</td>
+                                <td>antogonist:Mac Gargan</td>
+                                <td>3</td>
+                            </tr>
+                        </table>
+            </div>
+            <div>
+                <button class="button" onclick="myfunction()">save</button>
+                <script>
+                    function myfunction() {
+                        alert("now you can watch");
+                        // body...
+                    }
+                </script>
+            </div>
+            <div>
+                <button class="button1" onclick="myfunction1()"> undo</button>
+                <script>
+                    function myfunction1() {
+                        alert("now you can pause");
+                    }
+                </script>
+            </div>
+
+            <div>
+
+                <h2>ordered list</h2>
+                <ol class="a">
+                    <li>tobey</li>
+                    <li>andrew</li>
+                    <li>tom</li>
+                </ol>
+                <h3>unordered list</h3>
+                <ul class="b">
+                    <li>spiderman</li>
+                    <li>amazing spiderman</li>
+                    <li>avengers</li>
+                </ul>
+            </div>
